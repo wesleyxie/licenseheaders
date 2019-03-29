@@ -58,7 +58,7 @@ except NameError:
 # for each processing type, the detailed settings of how to process files of that type
 typeSettings = {
     "java": {
-        "extensions": [".java",".scala",".groovy",".jape"],
+        "extensions": [".java",".scala",".groovy",".jape",".kt"],
         "keepFirst": None,
         "blockCommentStartPattern": re.compile('^\s*/\*'),  ## used to find the beginning of a header bloc
         "blockCommentEndPattern": re.compile(r'\*/\s*$'),   ## used to find the end of a header block
@@ -82,14 +82,14 @@ typeSettings = {
         "headerLineSuffix": None            ## inserted after each header text line, but before the new line
     },
     "xml": {
-        "extensions": [".xml"],
+        "extensions": [".xml", ".storyboard"],
         "keepFirst": re.compile(r'^\s*<\?xml.*\?>'),
         "blockCommentStartPattern": re.compile(r'^\s*<!--'),
         "blockCommentEndPattern": re.compile(r'-->\s*$'),
         "lineCommentStartPattern": None,    ## used to find header blocks made by line comments
         "lineCommentEndPattern": None,
         "headerStartLine": "<!--\n",   ## inserted before the first header text line
-        "headerEndLine": "  -->\n",    ## inserted after the last header text line
+        "headerEndLine": "-->\n",    ## inserted after the last header text line
         "headerLinePrefix": "-- ",   ## inserted before each header text line
         "headerLineSuffix": None            ## inserted after each header text line, but before the new line
     },
@@ -163,6 +163,18 @@ typeSettings = {
         "headerStartLine": "%% -*- erlang -*-\n%% %CopyrightBegin%\n%%\n",   ## inserted before the first header text line
         "headerEndLine": "%%\n%% %CopyrightEnd%\n\n",    ## inserted after the last header text line
         "headerLinePrefix": "%% ",   ## inserted before each header text line
+        "headerLineSuffix": None,            ## inserted after each header text line, but before the new line
+    },
+    "swift": {
+        "extensions": [".swift"],
+        "keepFirst": None,
+        "blockCommentStartPattern": re.compile('^\s*/\*'),  ## used to find the beginning of a header bloc
+        "blockCommentEndPattern": re.compile(r'\*/\s*$'),   ## used to find the end of a header block
+        "lineCommentStartPattern": re.compile(r'\s*//'),    ## used to find header blocks made by line comments
+        "lineCommentEndPattern": None,
+        "headerStartLine": "/*\n",   ## inserted before the first header text line
+        "headerEndLine": " */\n",    ## inserted after the last header text line
+        "headerLinePrefix": " * ",   ## inserted before each header text line
         "headerLineSuffix": None,            ## inserted after each header text line, but before the new line
     }
 }
