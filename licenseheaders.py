@@ -90,7 +90,7 @@ typeSettings = {
         "lineCommentEndPattern": None,
         "headerStartLine": "<!--\n",   ## inserted before the first header text line
         "headerEndLine": "-->\n",    ## inserted after the last header text line
-        "headerLinePrefix": "-- ",   ## inserted before each header text line
+        "headerLinePrefix": "- ",   ## inserted before each header text line
         "headerLineSuffix": None            ## inserted after each header text line, but before the new line
     },
     "sql": {
