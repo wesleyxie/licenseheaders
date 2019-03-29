@@ -82,7 +82,7 @@ typeSettings = {
         "headerLineSuffix": None            ## inserted after each header text line, but before the new line
     },
     "xml": {
-        "extensions": [".xml", ".storyboard"],
+        "extensions": [".xml"],
         "keepFirst": re.compile(r'^\s*<\?xml.*\?>'),
         "blockCommentStartPattern": re.compile(r'^\s*<!--'),
         "blockCommentEndPattern": re.compile(r'-->\s*$'),
