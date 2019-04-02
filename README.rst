@@ -120,4 +120,6 @@ Licensed under the term of `MIT License`_. See attached file LICENSE.txt.
 
 
 .. _MIT License: http://en.wikipedia.org/wiki/MIT_License
+ 
 
+Use Like This:  python3 licenseheaders.py -t daimler -y 2019 -o "Mercedes-Benz" -d <your_project_dir>

@@ -180,7 +180,7 @@ typeSettings = {
 }
 
 yearsPattern = re.compile(r"Copyright\s*(?:\(\s*[C|c|©]\s*\)\s*)?([0-9][0-9][0-9][0-9](?:-[0-9][0-9]?[0-9]?[0-9]?))",re.IGNORECASE)
-licensePattern = re.compile(r"license",re.IGNORECASE)
+licensePattern = re.compile(r"All rights",re.IGNORECASE)
 emptyPattern = re.compile(r'^\s*$')
 
 ## -----------------------
